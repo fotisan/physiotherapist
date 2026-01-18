@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Φυσιοθεραπεία στο Λονδίνο με καθαρό πλάνο αποκατάστασης, hands on θεραπεία και εξατομικευμένη άσκηση. Κλείσε ραντεβού στο Kensington, London." />
-  <meta name="theme-color" content="#0b0f14" />
+  <meta name="theme-color" content="#f5fbff" />
 
   <title>Φυσιοθεραπεία στο Λονδίνο | Kensington Physio Studio</title>
 
@@ -13,7 +13,7 @@
   <meta property="og:description" content="Καθαρό πλάνο αποκατάστασης, hands on θεραπεία και εξατομικευμένη άσκηση. Κλείσε ραντεβού στο Kensington, London." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="el_GR" />
-  <meta property="og:image" content="feature-physio-people.png" />
+  <meta property="og:image" content="hero-london-physio.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" />
@@ -31,7 +31,7 @@
     "@context":"https://schema.org",
     "@type":"MedicalBusiness",
     "name":"Kensington Physio Studio",
-    "image":"feature-physio-people.png",
+    "image":"hero-london-physio.jpg",
     "description":"Physiotherapy clinic in Kensington, London. Evidence based rehab, manual therapy, and tailored exercise plans.",
     "url":"https://example.com",
     "telephone":"+44 20 7946 0000",
@@ -59,11 +59,14 @@
   <header class="site-header" data-elevate>
     <div class="wrap nav-wrap">
       <a class="brand" href="#" aria-label="Αρχική">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <!-- ΑΦΑΙΡΕΘΗΚΕ το brand-mark από το nav -->
         <span class="brand-text">
           <span class="brand-name">Kensington Physio</span>
           <span class="brand-sub">London</span>
         </span>
+
+        <!-- DEMO label -->
+        <span class="demo-badge" aria-label="Demo site">DEMO</span>
       </a>
 
       <nav class="nav" aria-label="Κύρια πλοήγηση">
@@ -137,8 +140,8 @@
             </div>
 
             <div class="media-figure" role="img" aria-label="Φωτογραφία σύγχρονου χώρου φυσιοθεραπείας στο Λονδίνο">
-              <!-- εικόνα που υπάρχει στο φάκελό σου -->
-              <img src="feature-physio-people.png" alt="Φωτεινός, σύγχρονος χώρος φυσιοθεραπείας στο Λονδίνο" loading="eager">
+              <!-- Βάλε εικόνα: hero-london-physio.jpg -->
+              <img src="hero-london-physio.jpg" alt="Φωτεινός, σύγχρονος χώρος φυσιοθεραπείας στο Λονδίνο" loading="eager">
             </div>
 
             <div class="media-bottom">
@@ -153,8 +156,7 @@
             </div>
           </div>
 
-          <!-- Floating boxes: πλέον δεν είναι absolute για να μην πέφτουν πάνω σε άλλα στοιχεία -->
-          <div class="floating" aria-label="Γρήγορη σύνοψη">
+          <div class="floating">
             <div class="floating-item">
               <strong>Στόχος</strong>
               <span>να μπορείς να κινείσαι χωρίς φόβο</span>
@@ -169,7 +171,7 @@
 
       <div class="hero-bg" aria-hidden="true">
         <div class="orb"></div>
-        <!-- gridlines αφαιρέθηκαν -->
+        <div class="gridlines"></div>
       </div>
     </section>
 
@@ -287,8 +289,8 @@
       <div class="wrap">
         <div class="about-grid">
           <div class="about-media">
-            <!-- εικόνα που υπάρχει στο φάκελό σου -->
-            <img class="about-img" src="feature-physio-portrait.png" alt="Πορτρέτο φυσιοθεραπευτή" loading="lazy">
+            <!-- Βάλε εικόνα: physio-portrait.jpg -->
+            <img class="about-img" src="physio-portrait.jpg" alt="Πορτρέτο φυσιοθεραπευτή" loading="lazy">
             <div class="about-badge">
               <strong>London clinic</strong>
               <span>Kensington High Street</span>
