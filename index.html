@@ -3,443 +3,510 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>London Physio Studio | Φυσιοθεραπεία στο Λονδίνο</title>
-  <meta name="description" content="Φυσιοθεραπεία στο Λονδίνο με καθαρό πλάνο αποκατάστασης, hands on θεραπεία και εξατομικευμένη άσκηση. Κλείσε ραντεβού στο London." />
+  <meta name="description" content="Φυσιοθεραπεία στο Λονδίνο με καθαρό πλάνο αποκατάστασης, hands on θεραπεία και εξατομικευμένη άσκηση. Κλείσε ραντεβού στο Kensington, London." />
+  <meta name="theme-color" content="#0b0f14" />
 
+  <title>Φυσιοθεραπεία στο Λονδίνο | Kensington Physio Studio</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Φυσιοθεραπεία στο Λονδίνο | Kensington Physio Studio" />
+  <meta property="og:description" content="Καθαρό πλάνο αποκατάστασης, hands on θεραπεία και εξατομικευμένη άσκηση. Κλείσε ραντεβού στο Kensington, London." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="el_GR" />
+  <meta property="og:image" content="feature-physio-people.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MedicalBusiness",
+    "name":"Kensington Physio Studio",
+    "image":"feature-physio-people.png",
+    "description":"Physiotherapy clinic in Kensington, London. Evidence based rehab, manual therapy, and tailored exercise plans.",
+    "url":"https://example.com",
+    "telephone":"+44 20 7946 0000",
+    "priceRange":"££",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Kensington High Street",
+      "addressLocality":"London",
+      "postalCode":"W8",
+      "addressCountry":"GB"
+    },
+    "areaServed":"London",
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"19:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday"],"opens":"08:00","closes":"17:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:00","closes":"14:00"}
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div class="page">
-    <!-- Top glow background -->
-    <div class="bg" aria-hidden="true">
-      <div class="bg-orb bg-orb-1"></div>
-      <div class="bg-orb bg-orb-2"></div>
-      <div class="bg-grid"></div>
-    </div>
+  <a class="skip" href="#main">Πήγαινε στο περιεχόμενο</a>
 
-    <!-- NAV -->
-    <header class="nav">
-      <div class="wrap nav-inner">
-        <a class="logo" href="#">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="logo-text">
-            <span class="logo-name">London Physio</span>
-            <span class="logo-sub">Kensington, London</span>
-          </span>
-        </a>
+  <header class="site-header" data-elevate>
+    <div class="wrap nav-wrap">
+      <a class="brand" href="#" aria-label="Αρχική">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Kensington Physio</span>
+          <span class="brand-sub">London</span>
+        </span>
+      </a>
 
-        <nav class="nav-links" aria-label="Πλοήγηση">
-          <a href="#about">About</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="nav-actions">
-          <a class="btn btn-ghost" href="tel:+442079460000">Κλήση</a>
-          <a class="btn btn-primary" href="#contact">Κλείσε ραντεβού</a>
-        </div>
-
-        <button class="burger" type="button" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="mobileMenu">
-          <span></span><span></span>
+      <nav class="nav" aria-label="Κύρια πλοήγηση">
+        <button class="nav-toggle" type="button" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
         </button>
-      </div>
 
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="#about">About</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-        <div class="mobile-actions">
-          <a class="btn btn-ghost" href="tel:+442079460000">Κλήση</a>
-          <a class="btn btn-primary" href="#contact">Κλείσε ραντεβού</a>
+        <div class="nav-menu" id="navMenu">
+          <a href="#services">Υπηρεσίες</a>
+          <a href="#process">Πώς δουλεύουμε</a>
+          <a href="#about">Σχετικά</a>
+          <a href="#reviews">Αξιολογήσεις</a>
+          <a href="#contact">Επικοινωνία</a>
+
+          <div class="nav-cta">
+            <a class="btn btn-ghost" href="tel:+442079460000">Κλήση</a>
+            <a class="btn btn-primary" href="#contact">Κλείσε ραντεβού</a>
+          </div>
         </div>
-      </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
+  <main id="main">
     <!-- HERO -->
-    <main>
-      <section class="hero">
-        <div class="wrap hero-inner">
-          <div class="hero-copy">
-            <div class="pill">London Physio Clinic</div>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Φυσιοθεραπεία στο Λονδίνο, Kensington</p>
+          <h1>
+            Μείωσε τον πόνο, κέρδισε κίνηση,
+            γύρνα στις δραστηριότητές σου με αυτοπεποίθηση
+          </h1>
+          <p class="lead">
+            Από την πρώτη συνεδρία έχεις καθαρό πλάνο. Συνδυάζουμε hands on θεραπεία με στοχευμένη άσκηση,
+            ώστε να βλέπεις πρόοδο που κρατάει.
+          </p>
 
-            <h1 class="hero-title">
-              Γρήγορη, καθαρή αποκατάσταση,
-              με πλάνο που μπορείς να ακολουθήσεις
-            </h1>
-
-            <p class="hero-sub">
-              Από την πρώτη συνεδρία ξέρεις τι συμβαίνει, τι αλλάζουμε και γιατί.
-              Συνδυάζουμε hands on θεραπεία με εξατομικευμένη άσκηση, ώστε να βλέπεις πρόοδο που κρατάει.
-            </p>
-
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="#contact">Start free assessment</a>
-              <a class="btn btn-soft" href="#solutions">Δες υπηρεσίες</a>
-            </div>
-
-            <div class="hero-micro">
-              <span class="micro-item">
-                <span class="dot dot-green"></span> Same day reply
-              </span>
-              <span class="micro-item">
-                <span class="dot dot-blue"></span> Kensington, W8
-              </span>
-              <span class="micro-item">
-                <span class="dot dot-purple"></span> Sports + Desk posture
-              </span>
-            </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Κλείσε ραντεβού</a>
+            <a class="btn btn-ghost" href="#process">Δες τη διαδικασία</a>
           </div>
 
-          <div class="hero-visual">
-            <div class="visual-card">
-              <div class="visual-top">
-                <span class="chip">Αξιολόγηση 60'</span>
-                <span class="chip chip-soft">London</span>
-              </div>
-
-              <div class="visual-media">
-                <!-- Βάλε εικόνα με αυτό το όνομα -->
-                <img src="hero-physio-london.jpg" alt="Φωτεινός χώρος φυσιοθεραπείας στο Λονδίνο" />
-              </div>
-
-              <div class="visual-bottom">
-                <div class="metric">
-                  <div class="metric-k">4.9</div>
-                  <div class="metric-v">Customer rating</div>
-                </div>
-                <div class="metric">
-                  <div class="metric-k">1600+</div>
-                  <div class="metric-v">Sessions delivered</div>
-                </div>
-                <div class="metric">
-                  <div class="metric-k">1–3</div>
-                  <div class="metric-v">Sessions to feel change in many cases</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="float float-1">
-              <div class="float-title">Plan</div>
-              <div class="float-sub">βήματα, στόχοι, πρόοδος</div>
-            </div>
-
-            <div class="float float-2">
-              <div class="float-title">Relief</div>
-              <div class="float-sub">πόνος, κίνηση, έλεγχος</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- STATS + LOGOS ROW -->
-      <section class="strip" id="about">
-        <div class="wrap strip-inner">
-          <div class="strip-left">
-            <h2>Πιο έξυπνες αποφάσεις αποκατάστασης με καθαρή εικόνα της προόδου σου</h2>
-            <p>
-              Δεν “μαντεύουμε”. Μετράμε πόνο, εύρος κίνησης και δύναμη, και χτίζουμε πλάνο που κουμπώνει στην καθημερινότητά σου.
-            </p>
-
-            <div class="strip-stats">
-              <div class="stat">
-                <div class="stat-k">4.9</div>
-                <div class="stat-v">Μέσος όρος αξιολογήσεων</div>
-              </div>
-              <div class="stat">
-                <div class="stat-k">£25</div>
-                <div class="stat-v">Mini check-in follow up</div>
-              </div>
-              <div class="stat">
-                <div class="stat-k">24h</div>
-                <div class="stat-v">Απάντηση συνήθως σε 24 ώρες</div>
-              </div>
-            </div>
+          <div class="trust-row" aria-label="Στοιχεία εμπιστοσύνης">
+            <div class="chip">Αθλητικοί τραυματισμοί</div>
+            <div class="chip">Μέση, αυχένας, ώμος</div>
+            <div class="chip">Αποκατάσταση μετά από χειρουργείο</div>
           </div>
 
-          <div class="strip-right">
-            <div class="mini-dashboard">
-              <div class="dash-top">
-                <span class="dash-pill">Progress</span>
-                <span class="dash-pill dash-pill-soft">Jan – Dec</span>
-              </div>
-              <div class="dash-body">
-                <div class="dash-graph" aria-hidden="true"></div>
-                <div class="dash-caption">
-                  <strong>Premium Analysis</strong>
-                  <span>Απλά metrics για να ξέρεις ότι πας σωστά</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="wrap logos" aria-label="Trusted by">
-          <span class="logos-title">Trusted by individuals & businesses worldwide</span>
-          <div class="logos-row">
-            <span class="logo-pill">Google</span>
-            <span class="logo-pill">NHS referrals</span>
-            <span class="logo-pill">Running clubs</span>
-            <span class="logo-pill">Pilates studios</span>
-            <span class="logo-pill">Corporate desks</span>
-            <span class="logo-pill">London</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- FEATURES CARDS (like screenshot) -->
-      <section class="features" id="solutions">
-        <div class="wrap">
-          <div class="section-head">
-            <h2>Υποστήριξη που δουλεύει στην πράξη</h2>
-            <p>Τρία “κουτιά” όπως στο design που έστειλες, μόνο που εδώ είναι για Physio.</p>
-          </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="feature-icon">↻</div>
-              <h3>Real time correction</h3>
-              <p>Καθαρίζουμε τεχνική σε κινήσεις και ασκήσεις ώστε να μην επιστρέφει ο πόνος.</p>
-
-              <div class="feature-mini">
-                <div class="mini-title">Movement check</div>
-                <div class="mini-row">
-                  <span>Hinge</span><span class="tag ok">OK</span>
-                </div>
-                <div class="mini-row">
-                  <span>Squat</span><span class="tag warn">Adjust</span>
-                </div>
-                <div class="mini-row">
-                  <span>Shoulder</span><span class="tag ok">OK</span>
-                </div>
-                <button class="mini-btn" type="button">Book assessment</button>
-              </div>
+          <div class="mini-cards">
+            <article class="mini-card">
+              <h3>Σαφήνεια</h3>
+              <p>Μαθαίνεις τι συμβαίνει και τι ακριβώς κάνουμε για να το αλλάξουμε.</p>
             </article>
-
-            <article class="feature-card feature-card-dark">
-              <div class="feature-icon">👥</div>
-              <h3>30+ cases weekly</h3>
-              <p>Αθλητικοί τραυματισμοί, μέση, αυχένας, ώμος και επανένταξη σε άσκηση.</p>
-
-              <div class="feature-photo">
-                <!-- Βάλε εικόνα με αυτό το όνομα -->
-                <img src="feature-physio-people.jpg" alt="Άνθρωποι σε καθημερινή κίνηση, London vibe" />
-              </div>
+            <article class="mini-card">
+              <h3>Πρόοδος</h3>
+              <p>Μετράμε βελτίωση σε πόνο, εύρος κίνησης και δύναμη, όχι απλώς αίσθηση.</p>
             </article>
-
-            <article class="feature-card">
-              <div class="feature-icon">⚡</div>
-              <h3>Instant next steps</h3>
-              <p>Φεύγεις με βήματα. Τι κάνεις σήμερα, τι κάνεις σε 7 μέρες, τι κυνηγάμε σε 30.</p>
-
-              <div class="feature-mini">
-                <div class="mini-title">Transfer success</div>
-                <div class="mini-row">
-                  <span>Week 1</span><span class="tag ok">Relief</span>
-                </div>
-                <div class="mini-row">
-                  <span>Week 2</span><span class="tag ok">Mobility</span>
-                </div>
-                <div class="mini-row">
-                  <span>Week 3</span><span class="tag ok">Strength</span>
-                </div>
-                <button class="mini-btn" type="button">Download plan</button>
-              </div>
+            <article class="mini-card">
+              <h3>Ασφάλεια</h3>
+              <p>Προσαρμογή στο σώμα σου, στον χρόνο σου και στον στόχο σου.</p>
             </article>
           </div>
         </div>
-      </section>
 
-      <!-- BIG SPLIT (bottom section like screenshot) -->
-      <section class="big-split">
-        <div class="wrap split-inner">
-          <div class="split-left">
-            <div class="kicker">About us</div>
-            <h2>Χτίζουμε πιο έξυπνες συνήθειες κίνησης για την καθημερινή ζωή</h2>
-            <p>
-              Ο στόχος δεν είναι να “περάσει” απλώς. Ο στόχος είναι να μπορείς να δουλεύεις, να περπατάς,
-              να γυμνάζεσαι και να ζεις χωρίς να σκέφτεσαι τον πόνο.
-            </p>
+        <div class="hero-media">
+          <div class="media-card">
+            <div class="media-top">
+              <span class="pill">Kensington, London W8</span>
+              <span class="pill pill-soft">Πρώτη αξιολόγηση 60'</span>
+            </div>
 
-            <ul class="check">
-              <li>Απλή εξήγηση για το τι συμβαίνει και γιατί</li>
-              <li>Πλάνο άσκησης που ταιριάζει στη ζωή σου</li>
-              <li>Progress tracking με ξεκάθαρα milestones</li>
+            <div class="media-figure" role="img" aria-label="Φωτογραφία σύγχρονου χώρου φυσιοθεραπείας στο Λονδίνο">
+              <!-- εικόνα που υπάρχει στο φάκελό σου -->
+              <img src="feature-physio-people.png" alt="Φωτεινός, σύγχρονος χώρος φυσιοθεραπείας στο Λονδίνο" loading="eager">
+            </div>
+
+            <div class="media-bottom">
+              <div class="stat">
+                <span class="stat-k">4.9</span>
+                <span class="stat-v">Μέσος όρος αξιολογήσεων</span>
+              </div>
+              <div class="stat">
+                <span class="stat-k">1 έως 3</span>
+                <span class="stat-v">συνεδρίες για να νιώσεις διαφορά σε πολλά περιστατικά</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating boxes: πλέον δεν είναι absolute για να μην πέφτουν πάνω σε άλλα στοιχεία -->
+          <div class="floating" aria-label="Γρήγορη σύνοψη">
+            <div class="floating-item">
+              <strong>Στόχος</strong>
+              <span>να μπορείς να κινείσαι χωρίς φόβο</span>
+            </div>
+            <div class="floating-item">
+              <strong>Σχέδιο</strong>
+              <span>απλό, εφαρμόσιμο, με βήματα</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb"></div>
+        <!-- gridlines αφαιρέθηκαν -->
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Υπηρεσίες που δίνουν αποτέλεσμα στην καθημερινότητα</h2>
+          <p>Επιλέγουμε τη σωστή παρέμβαση για να βελτιωθείς γρήγορα και να μείνεις καλά.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">◎</div>
+            <h3>Αθλητικοί τραυματισμοί</h3>
+            <p>Από διάστρεμμα μέχρι τενοντοπάθειες. Στόχος να επιστρέψεις με σταθερότητα και έλεγχο.</p>
+            <ul class="list">
+              <li>Επανεκπαίδευση κίνησης</li>
+              <li>Δύναμη και αντοχή</li>
+              <li>Πρόληψη υποτροπής</li>
             </ul>
+          </article>
 
-            <a class="btn btn-primary" href="#contact">Start free trial</a>
+          <article class="card">
+            <div class="icon" aria-hidden="true">◐</div>
+            <h3>Πόνος σε μέση και αυχένα</h3>
+            <p>Καθαρίζουμε τι σε ενοχλεί και χτίζουμε ανθεκτικότητα με άσκηση που μπορείς να τηρήσεις.</p>
+            <ul class="list">
+              <li>Αποφόρτιση και κινητοποίηση</li>
+              <li>Ενδυνάμωση κορμού</li>
+              <li>Οδηγίες για εργασία και ύπνο</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">◈</div>
+            <h3>Ώμος, γόνατο, ισχίο</h3>
+            <p>Για πιάσιμο, αστάθεια, περιορισμό εύρους. Στόχος να σηκώνεις, να περπατάς, να γυμνάζεσαι χωρίς δεύτερη σκέψη.</p>
+            <ul class="list">
+              <li>Πρόγραμμα φόρτισης</li>
+              <li>Επανεκκίνηση κίνησης</li>
+              <li>Επιστροφή σε sport ή γυμναστήριο</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">◑</div>
+            <h3>Μετεγχειρητική αποκατάσταση</h3>
+            <p>Δομημένη επαναφορά με milestones, ώστε να ξέρεις ότι είσαι στο σωστό σημείο, τη σωστή στιγμή.</p>
+            <ul class="list">
+              <li>Οίδημα και κινητικότητα</li>
+              <li>Δύναμη και λειτουργία</li>
+              <li>Επανένταξη σε δραστηριότητες</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section-alt" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Μία διαδικασία που σε ηρεμεί γιατί ξέρεις τι ακολουθεί</h2>
+          <p>Δεν κυνηγάμε την τύχη. Χτίζουμε σταθερότητα με καθαρά βήματα.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-n">1</div>
+            <h3>Αξιολόγηση</h3>
+            <p>Παίρνουμε ιστορικό, δοκιμάζουμε κίνηση και βρίσκουμε τι πραγματικά σε περιορίζει.</p>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
+            <h3>Άμεση ανακούφιση</h3>
+            <p>Χρησιμοποιούμε τεχνικές και άσκηση για να μειωθεί ο πόνος και να ανοίξει το εύρος.</p>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <h3>Πλάνο αποκατάστασης</h3>
+            <p>Παίρνεις πρόγραμμα που μπορείς να εφαρμόσεις, με συχνότητα, οδηγίες και στόχους.</p>
+          </div>
+          <div class="step">
+            <div class="step-n">4</div>
+            <h3>Επιστροφή με αυτοπεποίθηση</h3>
+            <p>Χτίζουμε αντοχή ώστε να δουλεύεις, να γυμνάζεσαι και να κινείσαι χωρίς φόβο.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="panel">
+            <h3>Σε τι θα σε βοηθήσει άμεσα</h3>
+            <ul class="check">
+              <li>Να καταλάβεις τι σου συμβαίνει με απλά λόγια</li>
+              <li>Να δεις συγκεκριμένο πλάνο για το τι κάνουμε από εδώ και πέρα</li>
+              <li>Να φύγεις με ασκήσεις που έχουν νόημα για σένα</li>
+            </ul>
           </div>
 
-          <div class="split-right">
-            <div class="mock">
-              <div class="mock-head">
-                <span class="mock-pill">Spending</span>
-                <span class="mock-pill mock-pill-soft">weekly</span>
+          <div class="panel panel-soft">
+            <h3>Για ποιον είναι ιδανικό</h3>
+            <ul class="check">
+              <li>Αν θες να γυρίσεις σε sport ή γυμναστήριο χωρίς ρίσκο</li>
+              <li>Αν κάθεσαι πολλές ώρες και σε τραβάει μέση ή αυχένας</li>
+              <li>Αν θέλεις αποκατάσταση με πειθαρχία, αλλά χωρίς υπερβολές</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-media">
+            <!-- εικόνα που υπάρχει στο φάκελό σου -->
+            <img class="about-img" src="feature-physio-portrait.png" alt="Πορτρέτο φυσιοθεραπευτή" loading="lazy">
+            <div class="about-badge">
+              <strong>London clinic</strong>
+              <span>Kensington High Street</span>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <div class="section-head tight">
+              <h2>Φροντίδα που σέβεται τον χρόνο σου</h2>
+              <p>
+                Η θεραπεία δεν είναι απλώς μία συνεδρία. Είναι η αίσθηση ότι κάποιος σε καθοδηγεί,
+                με σχέδιο και με συνέπεια, μέχρι να σταθείς στα πόδια σου όπως θέλεις.
+              </p>
+            </div>
+
+            <div class="about-points">
+              <div class="point">
+                <h3>Ειλικρίνεια</h3>
+                <p>Σου λέω τι είναι ρεαλιστικό, τι περιμένουμε και πότε.</p>
               </div>
-              <div class="mock-body">
-                <div class="mock-number">£43,435.80</div>
-                <div class="mock-sub">My progress last 30 days</div>
-                <div class="mock-bars" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span><span></span>
-                </div>
+              <div class="point">
+                <h3>Απλότητα</h3>
+                <p>Λίγα και σωστά, ώστε να μπορείς να το κάνεις στην πράξη.</p>
+              </div>
+              <div class="point">
+                <h3>Συνέπεια</h3>
+                <p>Η πρόοδος έρχεται όταν το πρόγραμμα ταιριάζει στη ζωή σου.</p>
               </div>
             </div>
 
-            <div class="split-photo">
-              <!-- Βάλε εικόνα με αυτό το όνομα -->
-              <img src="feature-physio-portrait.jpg" alt="Πορτρέτο φυσιοθεραπευτή σε χώρο κλινικής" />
+            <div class="about-cta">
+              <a class="btn btn-primary" href="#contact">Κλείσε ραντεβού</a>
+              <a class="btn btn-ghost" href="tel:+442079460000">+44 20 7946 0000</a>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- PRICING -->
-      <section class="pricing" id="pricing">
-        <div class="wrap">
-          <div class="section-head">
-            <h2>Pricing</h2>
-            <p>Απλό, καθαρό, χωρίς εκπλήξεις. Εσύ ξέρεις τι παίρνεις.</p>
-          </div>
-
-          <div class="price-grid">
-            <article class="price-card">
-              <div class="price-top">
-                <h3>Initial Assessment</h3>
-                <div class="price">£95</div>
-              </div>
-              <p>60’ αξιολόγηση, hands on, πλάνο άσκησης, στόχοι για τις επόμενες εβδομάδες.</p>
-              <ul>
-                <li>Range of motion + strength testing</li>
-                <li>Clear next steps</li>
-                <li>Home plan PDF</li>
-              </ul>
-              <a class="btn btn-soft w100" href="#contact">Κλείσε assessment</a>
-            </article>
-
-            <article class="price-card price-card-featured">
-              <div class="badge">Most chosen</div>
-              <div class="price-top">
-                <h3>Recovery Plan</h3>
-                <div class="price">£240</div>
-              </div>
-              <p>3 συνεδρίες σε 14 ημέρες, με progress tracking και προσαρμογή προγράμματος.</p>
-              <ul>
-                <li>3 sessions</li>
-                <li>Progress check</li>
-                <li>Technique correction</li>
-              </ul>
-              <a class="btn btn-primary w100" href="#contact">Ξεκίνα πλάνο</a>
-            </article>
-
-            <article class="price-card">
-              <div class="price-top">
-                <h3>Follow Up</h3>
-                <div class="price">£70</div>
-              </div>
-              <p>45’ συνεδρία για προσαρμογή άσκησης, πόνο, κινητικότητα και επιστροφή σε δραστηριότητες.</p>
-              <ul>
-                <li>Manual therapy</li>
-                <li>Exercise progression</li>
-                <li>Return to sport steps</li>
-              </ul>
-              <a class="btn btn-soft w100" href="#contact">Κλείσε follow up</a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section class="contact" id="contact">
-        <div class="wrap contact-inner">
-          <div class="contact-left">
-            <h2>Contact</h2>
-            <p>
-              Στείλε τι σε απασχολεί και θα σου απαντήσω με διαθέσιμες ώρες.
-              Kensington, London, με εύκολη πρόσβαση.
+            <p class="micro">
+              Εξυπηρέτηση σε Kensington, Notting Hill, Hammersmith, Chelsea και ευρύτερα London.
             </p>
-
-            <div class="contact-cards">
-              <div class="contact-card">
-                <div class="cc-k">Phone</div>
-                <a class="cc-v" href="tel:+442079460000">+44 20 7946 0000</a>
-              </div>
-              <div class="contact-card">
-                <div class="cc-k">Email</div>
-                <a class="cc-v" href="mailto:hello@londonphysio.co.uk">hello@londonphysio.co.uk</a>
-              </div>
-              <div class="contact-card">
-                <div class="cc-k">Location</div>
-                <div class="cc-v">Kensington High Street, London W8</div>
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="contact-right">
-            <form class="form" id="contactForm">
+    <!-- REVIEWS -->
+    <section class="section section-alt" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Αξιολογήσεις</h2>
+          <p>Λίγα λόγια από ανθρώπους που ήθελαν να επιστρέψουν στη ζωή τους χωρίς περιορισμούς.</p>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>
+              Μέσα σε δύο εβδομάδες είχα λιγότερο πόνο και επιτέλους κατάλαβα τι πρέπει να κάνω στο σπίτι.
+            </blockquote>
+            <figcaption>Maria, London</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              Καθαρή διαδικασία, με σεβασμό. Δεν ένιωσα ποτέ ότι κάνουμε πράγματα χωρίς λόγο.
+            </blockquote>
+            <figcaption>James, Kensington</figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              Γύρισα στο τρέξιμο πιο δυνατός. Το πρόγραμμα ήταν ρεαλιστικό, αυτό έκανε τη διαφορά.
+            </blockquote>
+            <figcaption>Alex, Notting Hill</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Κλείσε ραντεβού</h2>
+          <p>Στείλε μου λίγες πληροφορίες και θα σου προτείνω άμεσα διαθέσιμες ώρες.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Στείλε μήνυμα</h3>
+
+            <form class="form" id="contactForm" novalidate>
               <label>
                 Ονοματεπώνυμο
-                <input name="name" required placeholder="π.χ. Γιώργος Παπαδόπουλος">
+                <input name="name" type="text" placeholder="π.χ. Γιώργος Παπαδόπουλος" autocomplete="name" required>
               </label>
 
               <label>
                 Email
-                <input name="email" type="email" required placeholder="you@email.com">
+                <input name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+              </label>
+
+              <label>
+                Τηλέφωνο
+                <input name="phone" type="tel" placeholder="+44 ..." autocomplete="tel">
               </label>
 
               <label>
                 Τι σε απασχολεί
-                <textarea name="message" required rows="5" placeholder="Πού νιώθεις πόνο, από πότε και τι σε περιορίζει;"></textarea>
+                <textarea name="message" rows="5" placeholder="Πες μου πού νιώθεις πόνο, από πότε και τι σε περιορίζει." required></textarea>
               </label>
 
-              <button class="btn btn-primary w100" type="submit">Send</button>
-
-              <div class="toast" id="toast" aria-hidden="true">
-                <div class="toast-title">Ευχαριστούμε για την επικοινωνία</div>
-                <div class="toast-sub">Θα επικοινωνήσουμε το συντομότερο μαζί σας.</div>
-                <button class="toast-x" type="button" aria-label="Κλείσιμο">×</button>
+              <div class="form-row">
+                <button class="btn btn-primary" type="submit">Στείλε και κλείσε ραντεβού</button>
+                <p class="form-note">Απάντηση συνήθως μέσα στην ίδια μέρα.</p>
               </div>
             </form>
 
+            <div class="toast" id="toast" role="status" aria-live="polite" aria-hidden="true">
+              <div class="toast-inner">
+                <strong>Ευχαριστούμε για την επικοινωνία</strong>
+                <span>Θα επικοινωνήσουμε το συντομότερο μαζί σας.</span>
+              </div>
+              <button class="toast-close" type="button" aria-label="Κλείσιμο">×</button>
+            </div>
+          </div>
+
+          <aside class="contact-side">
+            <div class="info">
+              <h3>Στοιχεία κλινικής</h3>
+
+              <div class="info-row">
+                <span class="label">Τοποθεσία</span>
+                <span class="value">Kensington High Street, London W8</span>
+              </div>
+
+              <div class="info-row">
+                <span class="label">Τηλέφωνο</span>
+                <a class="value link" href="tel:+442079460000">+44 20 7946 0000</a>
+              </div>
+
+              <div class="info-row">
+                <span class="label">Email</span>
+                <a class="value link" href="mailto:hello@kensingtonphysio.co.uk">hello@kensingtonphysio.co.uk</a>
+              </div>
+
+              <div class="info-row">
+                <span class="label">Ωράριο</span>
+                <span class="value">
+                  Δευτέρα έως Πέμπτη 08:00 έως 19:30<br>
+                  Παρασκευή 08:00 έως 17:00<br>
+                  Σάββατο 10:00 έως 14:00
+                </span>
+              </div>
+
+              <div class="info-actions">
+                <a class="btn btn-ghost" href="https://www.google.com/maps?q=Kensington+High+Street+London+W8" target="_blank" rel="noopener">Άνοιγμα σε χάρτη</a>
+                <a class="btn btn-primary" href="tel:+442079460000">Κλήση τώρα</a>
+              </div>
+            </div>
+
             <div class="map">
               <iframe
-                title="London map"
+                title="Χάρτης Kensington London"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Kensington%20High%20Street%20London%20W8&output=embed"></iframe>
+                src="https://www.google.com/maps?q=Kensington%20High%20Street%20London%20W8&output=embed">
+              </iframe>
             </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div class="footer-left">
+          <div class="brand footer-brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Kensington Physio</span>
+              <span class="brand-sub">London</span>
+            </span>
+          </div>
+
+          <p class="footer-note">
+            Φροντίδα με σχέδιο, πρόοδος που μετριέται, επιστροφή στην καθημερινότητα.
+          </p>
+          <p class="footer-micro">© <span id="year"></span> Kensington Physio Studio. London, UK.</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <a href="#services">Υπηρεσίες</a>
+            <a href="#process">Διαδικασία</a>
+            <a href="#about">Σχετικά</a>
+            <a href="#contact">Επικοινωνία</a>
+          </div>
+
+          <div class="footer-social" aria-label="Social links">
+            <a class="social" href="#" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4z"/>
+                <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+                <path d="M17.6 6.4a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0z"/>
+              </svg>
+            </a>
+
+            <a class="social" href="#" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.98 3.5A2.5 2.5 0 0 1 7.5 6a2.5 2.5 0 0 1-2.52 2.5A2.5 2.5 0 0 1 2.5 6a2.5 2.5 0 0 1 2.48-2.5zM3 21h4V10H3v11zM10 10h3.8v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4V10z"/>
+              </svg>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <footer class="footer">
-        <div class="wrap footer-inner">
-          <div class="footer-left">
-            <div class="footer-logo">
-              <span class="logo-mark" aria-hidden="true"></span>
-              <span>
-                <strong>London Physio</strong>
-                <span class="footer-sub">Kensington, London</span>
-              </span>
-            </div>
-            <div class="footer-copy">© <span id="year"></span> London Physio Studio. All rights reserved.</div>
-          </div>
-
-          <div class="footer-right">
-            <a href="#about">About</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </footer>
-    </main>
-  </div>
+      <button class="to-top" type="button" aria-label="Πάνω" title="Πάνω">↑</button>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
